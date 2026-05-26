@@ -14,11 +14,12 @@
     <p> Rellene los datos solicitados para darle de alta en el sistema. ¡Gracias por confìar en KirbyMed! </p>
 
 <main>
-    <div class="form-container">
-        <form action="altas.html" method="POST">
-            <div class="form-group">
-                <label>ID del Paciente:</label>
-                <input type="number" name="id_paciente" required>
+    <div class="form-container"> <!-- Este es una división de clase que hace que se genere un contenedor donde va a ir nuestro formulario -->
+
+        <form action="altas.html" method="POST"> <!-- Según la acción de ingresar a la referencia, se elabora lo siguiente  -->
+            <div class="form-group"> <!-- Este es el contenedor principal dónde se almacena todo el formulario -->
+                <label>ID del Paciente:</label> <!-- Este label es nuestro requisito, dónde se indica el campo a llenar -->
+                <input type="number" name="id_paciente" required> <!-- Este es el requisito dónde se almacena el tipo de dato, y el name o variable que se necesita -->
             </div>
             
             <div class="form-group">
@@ -56,17 +57,22 @@
                 <input type="text" name="direccion" placeholder="Ej: Calle Azul, #2376" required>
             </div> 
 
-            <button type="submit" class="btn-submit">Dar de alta al Paciente</button>
+            <button type="submit" class="btn-submit">Dar de alta al Paciente</button> <!-- Este es el botón que envía el formulario a la base de datos -->
+
         </form>
     </div>
 
-    <a href="index.html" class="btn-back"> Volver al Inicio</a>
+    <a href="index.html" class="btn-back"> Volver al Inicio</a> <!-- Este es el botón para volver al inicio, está ligado al index principal-->
 </main>
 
 <footer>
     <p>Luna Arias Meredith Aranza - Programación</p>
     <p>24308051280589 - 4-I</p>
 </footer>
+
+
+    <!-- Este es el CSS jeje -->
+
 
 </body>
 <style>
