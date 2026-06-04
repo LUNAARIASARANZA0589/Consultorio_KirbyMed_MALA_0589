@@ -8,8 +8,11 @@
 </head>
 
 <header>
-    <h1 align="Center">Colecciones de Pacientes</h1>
-    <img src="logosinfondo.png"> 
+    <div class="header-contenido">
+        <a href="index.html" class="btn-inicio">Volver al inicio</a>
+        <h1 align="Center">Colecciones de Pacientes</h1>
+        <img src="logosinfondo.png" class="logo-chico"> 
+    </div>
 </header>
 
 <body>
@@ -74,6 +77,33 @@
 <style>
     header{
         background-color: rgb(245, 228, 242);
+        padding: 15px;
+    }
+    .header-contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .logo-chico {
+        height: 50px;
+        width: auto;
+    }
+    .btn-inicio {
+        background-color: rgb(245, 228, 242);
+        color: rgb(0, 0, 0);
+        font-family: "Poppins", sans-serif;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        border: 2px solid rgb(0, 0, 0);
+        transition: all 0.3s ease;
+    }
+    .btn-inicio:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(245, 228, 242);
     }
     body{
         background-color: rgb(255, 255, 255);
@@ -81,6 +111,7 @@
     h1{
         color: rgb(0, 0, 0);
         font-family:"Jua", sans-serif;
+        margin: 0;
     }
     h2{
         font-family:"Jua", sans-serif;
@@ -90,10 +121,11 @@
     }
     .paciente-contenedor {
         font-family: "Poppins", sans-serif;
-        margin-bottom: 20px;
+        margin: 20px auto;
         padding: 15px;
         background-color: rgb(245, 228, 242);
         border-radius: 8px;
+        max-width: 600px;
     }
     .dato {
         margin-bottom: 5px;
