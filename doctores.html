@@ -4,216 +4,150 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Jua:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Doctores </title>
+    <title>Doctores</title>
 </head>
 
 <header>
-    <h1 align="Center"> Doctores - KirbyMed </h1>
-    <p> Ingrese sus datos a contuniación para darle de alta en el sistema. </p>
-    <img src="logosinfondo.png" width="250" alt="Logo Consultorio">
+    <div class="header-contenido">
+        <a href="index.html" class="btn-inicio">Volver al inicio</a>
+        <h1 align="Center">Doctores - Consultorio Kirby Med</h1>
+        <img src="logosinfondo.png" class="logo-chico"> 
+    </div>
 </header>
+
 <body>
-    <main>
-        <div class="form-container">
-            <form action="doctores.html" method="POST">
-                <div class="form-group">
-                    <label>Cédula del Doctor:</label>
-                    <input type="number" name="cedula" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Apellido Paterno:</label>
-                    <input type="text" name="apellidos" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Apellido Materno:</label>
-                    <input type="text" name="apellidos" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Nombre(s):</label>
-                    <input type="text" name="nombre" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Edad:</label>
-                    <input type="number"  maxlength="2" name="edad" placeholder="Ej: 21" required>
-                </div>
-            
-                <div class="form-group">
-                    <label>Sexo:</label>
-                    <input type="text"  maxlength="1" placeholder="Ej: M" required>
-                </div>
-    
-                <div class="form-group">
-                    <label>Jornada:</label>
-                    <select name="jornada" required>
-                        <option value="Matutina">Matutina</option>
-                        <option value="Vespertina">Vespertina</option>
-                        <option value="Nocturna">Nocturna</option>
-                        <option value="Completa">Completa</option>
-                    </select>
-                </div>
-    
-                <div class="form-group">
-                    <label>Télefono:</label>
-                    <input type="number" name="telefono" placeholder="Ej: 564 345" required>
-                </div> 
-                <div class="form-group">
-                    <label>Sueldo Base:</label>
-                    <input type="number" name="sueldo"  required>
-                </div>
-                <div class="form-group">
-                    <label>Especialidad:</label>
-                    <input type="text" name="especialidad"  required>
-                </div>
-                <div class="form-group">
-                    <label>Dirección:</label>
-                    <input type="text" name="direccion" placeholder="Ej: Calle Azul, #2376" required>
-                </div>
-                <button type="submit" class="btn-submit">Registrar al Doctor</button>
-            </form>
-        </div>
-    
-        <a href="index.html" class="btn-back"> Volver al Inicio</a>
-    </main>
-    
+
+<div class="doctores-lista">
+    <div class="paciente-contenedor">
+        <div class="dato"><strong>Cédula del Doctor:</strong> 111</div>
+        <div class="dato"><strong>Apellido Paterno:</strong> Ortíz</div>
+        <div class="dato"><strong>Apellido Materno:</strong> Villalobos</div>
+        <div class="dato"><strong>Nombre(s):</strong> Elena</div>
+        <div class="dato"><strong>Edad:</strong> 42</div>
+        <div class="dato"><strong>Sexo:</strong> Femenino</div>
+        <div class="dato"><strong>Jornada:</strong> Matutina</div>
+        <div class="dato"><strong>Teléfono:</strong> 56789898</div>
+        <div class="dato"><strong>Sueldo Base:</strong> $55,000 MX</div>
+        <div class="dato"><strong>Especialidad:</strong> Cardiología</div>
+        <div class="dato"><strong>Dirección:</strong> Calle Ale, #8021</div>
+    </div>
+
+    <div class="paciente-contenedor">
+        <div class="dato"><strong>Cédula del Doctor:</strong> 112</div>
+        <div class="dato"><strong>Apellido Paterno:</strong> Sotomayor</div>
+        <div class="dato"><strong>Apellido Materno:</strong> Vega</div>
+        <div class="dato"><strong>Nombre(s):</strong> Julián</div>
+        <div class="dato"><strong>Edad:</strong> 35</div>
+        <div class="dato"><strong>Sexo:</strong> Masculino</div>
+        <div class="dato"><strong>Jornada:</strong> Vespertina</div>
+        <div class="dato"><strong>Teléfono:</strong> 839492445</div>
+        <div class="dato"><strong>Sueldo Base:</strong> $38,000 MX</div>
+        <div class="dato"><strong>Especialidad:</strong> Pediatría</div>
+        <div class="dato"><strong>Dirección:</strong> Calle Calo, #8023</div>
+    </div>
+
+    <div class="paciente-contenedor">
+        <div class="dato"><strong>Cédula del Doctor:</strong> 113</div>
+        <div class="dato"><strong>Apellido Paterno:</strong> Garcéz</div>
+        <div class="dato"><strong>Apellido Materno:</strong> Quiróz</div>
+        <div class="dato"><strong>Nombre(s):</strong> Mónica</div>
+        <div class="dato"><strong>Edad:</strong> 51</div>
+        <div class="dato"><strong>Sexo:</strong> Femenino</div>
+        <div class="dato"><strong>Jornada:</strong> Completa</div>
+        <div class="dato"><strong>Teléfono:</strong> 988765</div>
+        <div class="dato"><strong>Sueldo Base:</strong> $62,000 MX</div>
+        <div class="dato"><strong>Especialidad:</strong> Neurología</div>
+        <div class="dato"><strong>Dirección:</strong> Calle Amell, #8212</div>
+    </div>
+
+    <div class="paciente-contenedor">
+        <div class="dato"><strong>Cédula del Doctor:</strong> 114</div>
+        <div class="dato"><strong>Apellido Paterno:</strong> Amador</div>
+        <div class="dato"><strong>Apellido Materno:</strong> Valenzuela</div>
+        <div class="dato"><strong>Nombre(s):</strong> Ricardo</div>
+        <div class="dato"><strong>Edad:</strong> 29</div>
+        <div class="dato"><strong>Sexo:</strong> Masculino</div>
+        <div class="dato"><strong>Jornada:</strong> Nocturna</div>
+        <div class="dato"><strong>Teléfono:</strong> 555 641</div>
+        <div class="dato"><strong>Sueldo Base:</strong> Estampitas del mundial</div>
+        <div class="dato"><strong>Especialidad:</strong> Medicina General</div>
+        <div class="dato"><strong>Dirección:</strong> Calle Roma, #8381</div>
+    </div>
+</div>
+
+<h2 align="center">se busca personal</h2>
 
 </body>
+
 <style>
-    * {
-        box-sizing: border-box;
+    header{
+        background-color: rgb(245, 228, 242);
+        padding: 15px;
     }
-
-    body { 
-        font-family: "Poppins", sans-serif; 
-        background-color: #fcf8fb; 
-        margin: 0; 
-        padding: 0; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        min-height: 100vh; 
-    }
-
-    header {
-        background-color: rgb(245, 220, 229);
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-
-    h1 {
-        color: #3d2d3a;
-        font-family: 'Jua', sans-serif;
-        margin: 0;
-        font-size: 2rem;
-    }
-
-    main {
+    .header-contenido {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        padding: 40px 20px;
-        flex: 1;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-
-    .form-container { 
-        max-width: 500px; 
-        width: 100%;
-        background: white; 
-        padding: 35px; 
-        border-radius: 12px; 
-        box-shadow: 0 8px 24px rgba(245, 228, 242, 0.7); 
-        border-top: 6px solid #e8c5e3;
+    .logo-chico {
+        height: 50px;
+        width: auto;
     }
-
-    .form-group { 
-        margin-bottom: 22px; 
-    }
-    
-    label { 
-        display: block; 
-        margin-bottom: 8px; 
-        font-weight: 600; 
-        color: #555; 
-        font-size: 14px; 
-    }
-    
-    input[type="text"], input[type="number"], input[type="date"] { 
-        width: 100%; 
-        padding: 12px; 
-        border: 1px solid #e0d0dd; 
-        border-radius: 6px; 
+    .btn-inicio {
+        background-color: rgb(245, 228, 242);
+        color: rgb(0, 0, 0);
         font-family: "Poppins", sans-serif;
-        font-size: 14px;
-        background-color: #faf7fa;
-        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        border: 2px solid rgb(0, 0, 0);
         transition: all 0.3s ease;
     }
-
-    input:focus {
-        outline: none;
-        border-color: #ca9ec3;
-        background-color: #fff;
-        box-shadow: 0 0 5px rgba(202, 158, 195, 0.4);
+    .btn-inicio:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(245, 228, 242);
     }
-
-    .btn-submit { 
-        background-color: #ca9ec3; 
-        color: white; 
-        border: none; 
-        padding: 14px 15px; 
-        width: 100%; 
-        border-radius: 6px; 
-        font-size: 16px; 
-        font-weight: bold; 
-        cursor: pointer; 
-        transition: background-color 0.3s ease;
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    h1{
+        color: rgb(0, 0, 0);
+        font-family:"Jua", sans-serif;
+        margin: 0;
+    }
+    h2{
+        font-family:"Jua", sans-serif;
+        margin-top: 30px;
+    }
+    p{
+        font-family:"Poppins", sans-serif;
+    }
+    .doctores-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .paciente-contenedor {
         font-family: "Poppins", sans-serif;
-        margin-top: 10px;
-    }
-
-    .btn-submit:hover { 
-        background-color: #b382ab; 
-    }
-
-    .btn-back {
-        display: inline-block;
-        text-align: center;
-        margin-top: 25px;
-        color: #888;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        transition: color 0.3s ease;
-    }
-
-    .btn-back:hover {
-        color: #b382ab;
-    }
-
-    footer {
+        margin: 0 auto;
+        padding: 15px;
+        background-color: rgb(245, 228, 242);
+        border-radius: 8px;
+        max-width: 600px;
         width: 100%;
-        background-color: #f3edf2;
-        padding: 15px 0;
-        text-align: center;
-        font-size: 13px;
-        color: #776a78;
+        box-sizing: border-box;
     }
-
-    footer p {
-        margin: 4px 0;
-        font-family: 'Poppins', sans-serif;
+    .dato {
+        margin-bottom: 5px;
     }
 </style>
 
-</main>
 <footer>
-    <p align=" center">Luna Arias Meredith Aranza- Programación </p>
+    <p align="center">Luna Arias Meredith Aranza- Programación </p>
     <p align="center"> 24308051280589 - 4-I</p>
 </footer>
 </html>
