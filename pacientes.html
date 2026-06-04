@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pacientes - Kirby Med</title>
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jua:wght@400;700&display=swap" rel="stylesheet">
-  
-    <header>
-    <h1> Pacientes - KirbyMed</h1>
-    <p> Aquí se encuentran los registros de nuestros pacientes. </p>
-    <img src=" logosinfondo.png" width="250">
-    </header>
-  
-    <main>
-      <div class="form-container">
-      <table>
-      <thead>
-        <tr>
-          <th>ID del Paciente</th>
-          <th>Nombre</th>
-          <th>Apellidos</th>
-          <th>Sexo</th>
-          <th>Edad</th>
-          <th>Teléfono</th>
-          <th>Fecha de Nacimiento</th>
-          <th>Dirección</th>
-        </tr>
-          <tr>
-    <td> 001</td>
-    <td> Juan Alberto </td>
-    <td> García López </td>
-    <td> M </td>
-    <td> 22</td>
-    <td> 6604585</td>
-    <td> 11/06/04</td>
-    <td> Calle Sol #9080</td>
-</tr>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Jua:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title> Pacientes - Consultorio Kirby Med</title>
+</head>
 
-<tr>
-    <td> 002</td>
-    <td> Ana María </td>
-    <td> Martínez Pérez </td>
-    <td> F </td>
-    <td> 17</td>
-    <td> 3543455</td>
-    <td> 08/10/09</td>
-    <td> Calle Luna #4010</td>
-</tr>
+<header>
+    <h1 align="Center"> Colecciones de Pacientes </h1>
+   <img scr= "logosinfondo.png"> 
+</header>
+<body>
 
-<tr>
-    <td> 003</td>
-    <td> Luis Daniel </td>
-    <td> Zapata Ruíz </td>
-    <td> M </td>
-    <td> 32</td>
-    <td> 55654656</td>
-    <td> 12/03/89</td>
-    <td> Calle Raviolli #8012</td>
-</tr>
+<div class="paciente-contenedor">
+    <div class="dato"><strong>ID del Paciente:</strong> 001</div>
+    <div class="dato"><strong>Nombre:</strong> Juan Alberto</div>
+    <div class="dato"><strong>Apellidos:</strong> García López</div>
+    <div class="dato"><strong>Sexo:</strong> M</div>
+    <div class="dato"><strong>Edad:</strong> 22</div>
+    <div class="dato"><strong>Teléfono:</strong> 6604585</div>
+    <div class="dato"><strong>Fecha de Nacimiento:</strong> 11/06/04</div>
+    <div class="dato"><strong>Dirección:</strong> Calle Sol #9080</div>
+</div>
 
-<tr>
-    <td> 004</td>
-    <td>América</td>
-    <td> Rodriguez Torres </td>
-    <td> F </td>
-    <td> 17</td>
-    <td> 5676345</td>
-    <td> 11/06/09</td>
-    <td> Calle Rosa #9004</td>
-</tr>
+<div class="paciente-contenedor">
+    <div class="dato"><strong>ID del Paciente:</strong> 002</div>
+    <div class="dato"><strong>Nombre:</strong> Ana María</div>
+    <div class="dato"><strong>Apellidos:</strong> Martínez Pérez</div>
+    <div class="dato"><strong>Sexo:</strong> F</div>
+    <div class="dato"><strong>Edad:</strong> 17</div>
+    <div class="dato"><strong>Teléfono:</strong> 3543455</div>
+    <div class="dato"><strong>Fecha de Nacimiento:</strong> 08/10/09</div>
+    <div class="dato"><strong>Dirección:</strong> Calle Luna #4010</div>
+</div>
 
-<tr>
-    <td> 005</td>
-    <td> Demián Alexander</td>
-    <td> Arias Suárez  </td>
-    <td> M </td>
-    <td> 19</td>
-    <td> 0845988</td>
-    <td> 04/12/06</td>
-    <td> Calle Arroyo #4018</td>
-</tr>
+<div class="paciente-contenedor">
+    <div class="dato"><strong>ID del Paciente:</strong> 003</div>
+    <div class="dato"><strong>Nombre:</strong> Luis Daniel</div>
+    <div class="dato"><strong>Apellidos:</strong> Zapata Ruíz</div>
+    <div class="dato"><strong>Sexo:</strong> M</div>
+    <div class="dato"><strong>Edad:</strong> 32</div>
+    <div class="dato"><strong>Teléfono:</strong> 55654656</div>
+    <div class="dato"><strong>Fecha de Nacimiento:</strong> 12/03/89</div>
+    <div class="dato"><strong>Dirección:</strong> Calle Raviolli #8012</div>
+</div>
 
-</table>
+<div class="paciente-contenedor">
+    <div class="dato"><strong>ID del Paciente:</strong> 004</div>
+    <div class="dato"><strong>Nombre:</strong> América</div>
+    <div class="dato"><strong>Apellidos:</strong> Rodriguez Torres</div>
+    <div class="dato"><strong>Sexo:</strong> F</div>
+    <div class="dato"><strong>Edad:</strong> 17</div>
+    <div class="dato"><strong>Teléfono:</strong> 5676345</div>
+    <div class="dato"><strong>Fecha de Nacimiento:</strong> 11/06/09</div>
+    <div class="dato"><strong>Dirección:</strong> Calle Rosa #9004</div>
+</div>
 
-      </thead>
-      <tbody id="tabla-pacientes">
-      <div>
-      <a href="index.html" class="btn-back"> Volver al Inicio</a>
-      </div>
-  </main>
-  </body>
-  <style>
+<div class="paciente-contenedor">
+    <div class="dato"><strong>ID del Paciente:</strong> 005</div>
+    <div class="dato"><strong>Nombre:</strong> Demián Alexander</div>
+    <div class="dato"><strong>Apellidos:</strong> Arias Suárez</div>
+    <div class="dato"><strong>Sexo:</strong> M</div>
+    <div class="dato"><strong>Edad:</strong> 19</div>
+    <div class="dato"><strong>Teléfono:</strong> 0845988</div>
+    <div class="dato"><strong>Fecha de Nacimiento:</strong> 04/12/06</div>
+    <div class="dato"><strong>Dirección:</strong> Calle Arroyo #4018</div>
+</div>
+
+
+</body>
+<style>
     header{
         background-color: rgb(245, 228, 242);
         
@@ -116,11 +95,9 @@
         font-family:"Poppins", sans-serif;
     }
 </style>
-</head>
-<body>
+
 <footer>
-  <p><strong>Luna Arias Meredith Aranza</strong> - Programación</p>
-  <p>24308051280589 - 4-I</p>
+    <p align=" center">Luna Arias Meredith Aranza- Programación </p>
+    <p align="center"> 24308051280589 - 4-I</p>
 </footer>
-</body>
 </html>
