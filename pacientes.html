@@ -11,54 +11,83 @@
     <p> Ingrese sus datos a continuación para darle de alta en el sistema. </p>
     <img src=" logosinfondo.png" width="250">
     </header>
+  
     <main>
       <div class="form-container">
-          <form action="pacientes.html" method="POST">
-              <div class="form-group">
-                  <label>ID del Paciente:</label>
-                  <input type="number" name="id_paciente" required>
-              </div>
-              
-              <div class="form-group">
-                  <label>Nombre:</label>
-                  <input type="text" name="nombre" required>
-              </div>
-              
-              <div class="form-group">
-                  <label>Apellidos:</label>
-                  <input type="text" name="apellidos" placeholder="Ej: Perez" required>
-              </div>
-              
-              <div class="form-group">
-                  <label>Sexo:</label>
-                  <input type="text" name="sexo" placeholder="Ej: Femenino" required>
-              </div>
-              
-              <div class="form-group">
-                  <label>Edad:</label>
-                  <input type="number" name="edad" placeholder="Ej: 21" required>
-              </div>
-          
-              <div class="form-group">
-                  <label>Teléfono:</label>
-                  <input type="number" name="telefono" placeholder="Ej: 555 555" required>
-              </div>
-  
-              <div class="form-group">
-                  <label>Fecha de Nacimiento:</label>
-                  <input type="date" name="fecha_nac" required>
-              </div>
-  
-              <div class="form-group">
-                  <label>Dirección:</label>
-                  <input type="text" name="direccion" placeholder="Ej: Calle Azul, #2376" required>
-              </div> 
-  
-              <button type="submit" class="btn-submit">Dar de alta al Paciente</button>
-          </form>
-      </div>
-  
+      <table>
+      <thead>
+        <tr>
+          <th>ID del Paciente</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Sexo</th>
+          <th>Edad</th>
+          <th>Teléfono</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Dirección</th>
+        </tr>
+          <tr>
+    <td> 001</td>
+    <td> Juan Alberto </td>
+    <td> García López </td>
+    <td> M </td>
+    <td> 22</td>
+    <td> 6604585</td>
+    <td> 11/06/04</td>
+    <td> Calle Sol #9080</td>
+</tr>
+
+<tr>
+    <td> 002</td>
+    <td> Ana María </td>
+    <td> Martínez Pérez </td>
+    <td> F </td>
+    <td> 17</td>
+    <td> 3543455</td>
+    <td> 08/10/09</td>
+    <td> Calle Luna #4010</td>
+</tr>
+
+<tr>
+    <td> 003</td>
+    <td> Luis Daniel </td>
+    <td> Zapata Ruíz </td>
+    <td> M </td>
+    <td> 32</td>
+    <td> 55654656</td>
+    <td> 12/03/89</td>
+    <td> Calle Raviolli #8012</td>
+</tr>
+
+<tr>
+    <td> 004</td>
+    <td>América</td>
+    <td> Rodriguez Torres </td>
+    <td> F </td>
+    <td> 17</td>
+    <td> 5676345</td>
+    <td> 11/06/09</td>
+    <td> Calle Rosa #9004</td>
+</tr>
+
+<tr>
+    <td> 005</td>
+    <td> Demián Alexander</td>
+    <td> Arias Suárez  </td>
+    <td> M </td>
+    <td> 19</td>
+    <td> 0845988</td>
+    <td> 04/12/06</td>
+    <td> Calle Arroyo #4018</td>
+</tr>
+
+</table>
+
+      </thead>
+      <tbody id="tabla-pacientes">
+      <div>
       <a href="index.html" class="btn-back"> Volver al Inicio</a>
+      </div>
   </main>
   
 
